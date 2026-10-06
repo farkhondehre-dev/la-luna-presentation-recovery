@@ -1,7 +1,6 @@
 /*
   LA LUNA CONTENT
   Change the values in this file, then republish the site.
-  Replace the placeholder image paths with your own files when they are ready.
 */
 const laLunaOne = {
   presentationLabel: "Logo presentation · 01",
@@ -27,9 +26,7 @@ const laLunaOne = {
     secondary: "Adds warmth, softness and flexibility, allowing the identity to expand across products while staying consistent."
   },
   typography: {
-    display: "Georgia",
-    body: "Gotham",
-    title: "Character with clarity.",
+    display: "Georgia", body: "Gotham", title: "Character with clarity.",
     georgiaLead: "Warm. Familiar. Refined.",
     georgiaDescription: "Georgia’s expressive serifs and generous proportions bring warmth to the identity. Used for headlines, it gives La Luna a confident voice with a gentle character.",
     gothamLead: "Clear. Balanced. Practical.",
@@ -38,8 +35,7 @@ const laLunaOne = {
   },
   logoSystem: {
     wordmarks: {
-      title: "LOGOMARK",
-      subtitle: "Refined. Distinctive. Confident.",
+      title: "LOGOMARK", subtitle: "Refined. Distinctive. Confident.",
       description: "A custom wordmark designed to balance fabric-care expertise with softness, creating a sophisticated identity without entering beauty or fashion territory.",
       marks: [
         { name: "Cyrillic wordmark", file: "d01-wordmark-cyrillic.svg" },
@@ -47,8 +43,7 @@ const laLunaOne = {
       ]
     },
     lockups: {
-      title: "LOGOMARK & ARC",
-      subtitle: "A controlled lunar cue.",
+      title: "LOGOMARK & ARC", subtitle: "A controlled lunar cue.",
       description: "The Arc connects La Luna to its lunar meaning without using a literal moon symbol, adding recognition while keeping the identity refined and credible.",
       marks: [
         { name: "Cyrillic lockup", file: "d01-cyrillic-lockup.svg" },
@@ -73,13 +68,8 @@ const laLunaOne = {
   ]
 };
 
-/*
-  Each object below is a complete, independent presentation.
-  Edit the text, colours, image paths and downloads inside La Luna 2 or 3
-  when your other logo directions are ready. The current images are only
-  shared placeholders, so every direction begins as a complete presentation.
-*/
 const clonePresentation = (content) => JSON.parse(JSON.stringify(content));
+
 const laLunaTwo = clonePresentation(laLunaOne);
 laLunaTwo.presentationLabel = "Logo presentation · 02";
 laLunaTwo.tagline = "Care Beyond Clean";
@@ -103,8 +93,7 @@ laLunaTwo.colourLanguage = {
 };
 laLunaTwo.logoSystem = {
   wordmarks: {
-    title: "LIGHT EXPRESSION",
-    subtitle: "Quiet Protection",
+    title: "LIGHT EXPRESSION", subtitle: "Quiet Protection",
     description: "The open eclipse creates a sense of gentle protection around the wordmark, while the light treatment keeps the identity clean, calm and suitable for everyday fabric care.",
     marks: [
       { name: "Light expression · Cyrillic", file: "LaLuna_D02_Light_Cyrillic.svg" },
@@ -112,8 +101,7 @@ laLunaTwo.logoSystem = {
     ]
   },
   lockups: {
-    title: "DARK EXPRESSION",
-    subtitle: "Protective Glow",
+    title: "DARK EXPRESSION", subtitle: "Protective Glow",
     description: "The dark expression brings the eclipse concept to life through light and contrast. The glow surrounding the form suggests a protective aura — giving fabric care a more emotional, sensory expression.",
     marks: [
       { name: "Dark expression · Cyrillic", file: "LaLuna_D02_Dark_Cyrillic.png" },
@@ -141,20 +129,56 @@ laLunaTwo.downloads = [
 
 const laLunaThree = clonePresentation(laLunaOne);
 laLunaThree.presentationLabel = "Logo presentation · 03";
-laLunaThree.tagline = "Performance, wrapped in comfort.";
-laLunaThree.intro = "A clearer, more confident direction for modern fabric care.";
-laLunaThree.positioning = "This direction gives La Luna a crisper, more contemporary voice while preserving the softness and reassurance at the heart of the brand.";
-laLunaThree.conceptTitle = "A brighter expression of thoughtful care.";
-laLunaThree.concept = "Use this area to describe the third logo direction: its point of view, visual language and the feeling it is designed to create.";
+laLunaThree.tagline = "Care Beyond Clean";
+laLunaThree.intro = "Specialist fabric care with a softer point of view.";
+laLunaThree.conceptLabel = "CORE CONCEPT";
+laLunaThree.conceptTitle = "Gentle by Nature";
+laLunaThree.positioning = "Soft, flowing letterforms reflect the natural movement and softness of fabric, creating an identity centred around gentle everyday care.";
+laLunaThree.concept = "The crescent completes the gesture — bringing a subtle sense of protection, comfort and La Luna’s lunar character.";
+laLunaThree.designIdea = {
+  label: "DESIGN IDEA",
+  title: "Softness in every curve.",
+  text: "Rounded forms and fluid transitions give the identity a tactile, fabric-like character. The crescent integrates naturally with the lettering, turning the lunar reference into a soft and caring gesture."
+};
 laLunaThree.colors = [
-  { name: "Lunar Blue", hex: "#6F92BD", usage: "Primary brand colour" },
-  { name: "Cloud Lavender", hex: "#D3CEE4", usage: "Gentle accent" },
-  { name: "Moon Milk", hex: "#FAF8F3", usage: "Base surface" },
-  { name: "Silver Glow", hex: "#C9D0DA", usage: "Secondary neutral" },
-  { name: "Night Blue", hex: "#1E3049", usage: "Typography & contrast" }
+  { name: "Deep Plum", hex: "#403849", usage: "Anchor colour · mature & credible", group: "primary" },
+  { name: "Powder Blue", hex: "#B9D1DA", usage: "Freshness & gentle care", group: "primary" },
+  { name: "Soft Ivory", hex: "#F7F2E9", usage: "Warmth, cleanliness & calm", group: "primary" },
+  { name: "Dusty Lilac", hex: "#C8B8CC", usage: "Lunar & sensory accent", group: "secondary" },
+  { name: "Blush Clay", hex: "#D8BDB5", usage: "Warmth & tactility", group: "secondary" },
+  { name: "Sage Mist", hex: "#C5CEC3", usage: "Calm SKU extension", group: "secondary" }
 ];
-laLunaThree.logoSystem = null;
-laLunaThree.downloads = [];
+laLunaThree.colourLanguage = {
+  title: "Warm, tactile care.",
+  primary: "Soft neutrals and muted tones express gentleness, freshness and everyday fabric care, while a deeper anchor colour keeps the identity mature and credible.",
+  secondary: "Subtle lilac, clay and sage introduce warmth and sensory variety, creating a flexible system for different fabric-care needs."
+};
+laLunaThree.logoSystem = {
+  wordmarks: {
+    title: "LOGOMARK",
+    subtitle: "Soft. Flowing. Caring.",
+    description: "The rounded letterforms and integrated crescent turn La Luna’s lunar reference into a gentle, tactile gesture designed around everyday fabric care.",
+    marks: [
+      { name: "Cyrillic logo", file: "LaLuna_D03_Cyrillic.svg" },
+      { name: "Latin logo", file: "LaLuna_D03_Latin.svg" }
+    ]
+  }
+};
+laLunaThree.applications = [
+  { title: "Powder Blue Care", description: "A soft ivory detergent bottle with Powder Blue bringing freshness and gentle everyday care.", image: "d03-detergent-blue.png" },
+  { title: "Dusty Lilac Softness", description: "A complementary softener expression using muted lilac for a warmer, more sensory fabric-care cue.", image: "d03-softener-lilac.png" },
+  { title: "A Gentle System", description: "Powder Blue and Dusty Lilac work together as a flexible, recognisable family across fabric-care needs.", image: "d03-product-family.png" }
+];
+laLunaThree.lifestyle = [
+  { title: "Care Within Reach", description: "A calm laundry-room moment where softness feels part of the everyday ritual.", image: "d03-laundry-shelf.png" },
+  { title: "Freshness at Home", description: "Powder Blue brings a clean, gentle presence to the laundry space.", image: "d03-laundry-room.png" },
+  { title: "The Scent of Linen", description: "A sensory expression of freshly cared-for fabric.", image: "d03-linen-scent.png" },
+  { title: "A Softer Everyday", description: "Warmth, comfort and tactile care beyond the wash itself.", image: "d03-soft-everyday.png" }
+];
+laLunaThree.downloads = [
+  { label: "Cyrillic logo", file: "LaLuna_D03_Cyrillic.pdf", note: "PDF" },
+  { label: "Latin logo", file: "LaLuna_D03_Latin.pdf", note: "PDF" }
+];
 
 window.brandContent = laLunaOne;
 window.brandPresentations = { "1": laLunaOne, "2": laLunaTwo, "3": laLunaThree };

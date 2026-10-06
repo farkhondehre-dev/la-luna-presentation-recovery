@@ -1,0 +1,18 @@
+LA LUNA 03 — UPDATE PACKAGE
+
+Upload the CONTENTS of this folder to the ROOT of:
+farkhondehre-dev/la-luna-presentation-recovery
+
+Choose “Add file” → “Upload files” in GitHub, then drag all files from this folder.
+Files with the same names (index.html, content.js, script.js) should be replaced.
+Existing La Luna 1 / La Luna 2 assets in the repository are intentionally not duplicated here and will remain untouched.
+
+After GitHub commits the upload, Vercel should redeploy automatically.
+
+La Luna 03 included:
+- Cyrillic + Latin SVG logos for the website
+- Cyrillic + Latin PDF logo downloads
+- Core Concept + Design Idea
+- Primary + Secondary colour language
+- 3 application mockups
+- 4 lifestyle images

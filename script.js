@@ -17,10 +17,19 @@ $("positioning").textContent = c.positioning;
 $("conceptTitle").textContent = c.conceptTitle;
 $("concept").textContent = c.concept;
 if (c.conceptLabel) document.querySelector(".story .eyebrow").textContent = c.conceptLabel;
+
+if (c.designIdea) {
+  const storyGrid = document.querySelector(".story-grid");
+  const block = document.createElement("div");
+  block.className = "design-idea-block";
+  block.innerHTML = `<p class="eyebrow">${c.designIdea.label}</p><h3>${c.designIdea.title}</h3><p>${c.designIdea.text}</p>`;
+  storyGrid.insertAdjacentElement("afterend", block);
+}
+
 $("typeNames").textContent = `${c.typography.display} + ${c.typography.body}`;
 $("typeNote").textContent = c.typography.note;
 $("referenceTypes").textContent = `${c.typography.display} / ${c.typography.body}`;
-if ((version === "1" || version === "2") && c.typography.title) {
+if (c.typography.title) {
   const typeSection = document.querySelector(".type-section");
   typeSection.querySelector(".eyebrow").textContent = "TYPOGRAPHY";
   typeSection.querySelector(".type-card").outerHTML = `<div class="brand-type-layout"><h2>${c.typography.title}</h2><div class="brand-type-grid"><article><h3>GEORGIA</h3><p class="brand-type-sample georgia-specimen">Aa Bb Cc</p><p><strong>${c.typography.georgiaLead}</strong></p><p>${c.typography.georgiaDescription}</p></article><article><h3>GOTHAM</h3><p class="brand-type-sample gotham-specimen">Aa Bb Cc</p><p><strong>${c.typography.gothamLead}</strong></p><p>${c.typography.gothamDescription}</p></article></div><div class="brand-type-pairing"><h3>THE PAIRING</h3><p>${c.typography.note}</p></div></div>`;
@@ -28,17 +37,20 @@ if ((version === "1" || version === "2") && c.typography.title) {
   typeStyles.textContent = ".brand-type-layout>h2{font-size:clamp(2rem,4vw,3.45rem);line-height:1.12;margin-bottom:3rem}.brand-type-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4rem}.brand-type-layout h3{font-family:inherit;font-weight:400;font-size:1rem;letter-spacing:.08em}.brand-type-layout p{font-size:1rem;line-height:1.65}.brand-type-layout .brand-type-sample{font-size:clamp(2rem,4vw,4rem);line-height:1.2;margin:2rem 0}.brand-type-layout .georgia-specimen{font-family:'La Luna Georgia',Georgia,serif}.brand-type-layout .gotham-specimen{font-family:'La Luna Gotham',Arial,sans-serif;font-weight:300}.brand-type-pairing{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line);max-width:48rem}@media(max-width:720px){.brand-type-grid{grid-template-columns:1fr;gap:2rem}}";
   document.head.appendChild(typeStyles);
 }
+
 const logoSection = document.querySelector(".logo-system");
 if (c.logoSystem) {
   const logoGroup = (group) => `<div class="logo-group"><div class="logo-group-copy"><h2>${group.title}</h2>${group.subtitle ? `<p style="margin-bottom:1rem"><strong>${group.subtitle}</strong></p>` : ""}<p>${group.description}</p></div><div class="logo-grid">${group.marks.map((mark) => `<figure class="logo-card"><div class="logo-art"><img src="${mark.file}" alt="La Luna ${mark.name}" /></div></figure>`).join("")}</div></div>`;
-  $("logoSystem").innerHTML = `${logoGroup(c.logoSystem.wordmarks)}${logoGroup(c.logoSystem.lockups)}`;
+  $("logoSystem").innerHTML = Object.values(c.logoSystem).filter(Boolean).map(logoGroup).join("");
   logoSection.hidden = false;
 }
+
 const toast = document.querySelector(".toast");
 const swatchMarkup = (color) => `<div class="swatch" style="--swatch:${color.hex}"><span class="colour"></span><span class="swatch-detail"><b>${color.name}</b><span>${color.hex}</span><small>${color.usage}</small></span></div>`;
-document.querySelector(".palette .section-heading p").remove();
+const paletteIntro = document.querySelector(".palette .section-heading p");
+if (paletteIntro) paletteIntro.remove();
 $("swatches").innerHTML = c.colors.map(swatchMarkup).join("");
-if ((version === "1" || version === "2") && c.colourLanguage) {
+if (c.colourLanguage) {
   const palette = document.querySelector(".palette");
   palette.querySelector(".eyebrow").textContent = "COLOUR LANGUAGE";
   palette.querySelector(".section-heading h2").textContent = c.colourLanguage.title;

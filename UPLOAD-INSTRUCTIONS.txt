@@ -16,3 +16,13 @@ La Luna 03 included:
 - Primary + Secondary colour language
 - 3 application mockups
 - 4 lifestyle images
+
+V2 FIXES
+- D03 background/text styling now matches D01/D02.
+- Russian/native hero line removed.
+- Corrected Latin PNG used on the website; Latin PDF remains downloadable.
+- Lifestyle image positioning adjusted to preserve the D01/D02 layout and avoid excessive product cropping.
+
+V3 PDF RESTORE
+- Both D03 PDF logo files are included and remain the downloadable logo assets.
+- The Latin PNG is used only for on-page display.

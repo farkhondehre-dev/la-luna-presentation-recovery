@@ -160,7 +160,7 @@ laLunaThree.logoSystem = {
     description: "The rounded letterforms and integrated crescent turn La Luna’s lunar reference into a gentle, tactile gesture designed around everyday fabric care.",
     marks: [
       { name: "Cyrillic logo", file: "LaLuna_D03_Cyrillic.svg" },
-      { name: "Latin logo", file: "LaLuna_D03_Latin.svg" }
+      { name: "Latin logo", file: "LaLuna_D03_Latin.png" }
     ]
   }
 };

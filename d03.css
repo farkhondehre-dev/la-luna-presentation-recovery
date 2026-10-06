@@ -1,7 +1,5 @@
 /* La Luna 03 */
-body[data-version="3"]{--ink:#403849;--cream:#F7F2E9;--lav:#C8B8CC;--blue:#B9D1DA;--silver:#C5CEC3;--line:rgba(64,56,73,.17);}
-body[data-version="3"] .story{background:#403849;color:#F7F2E9;}
-.design-idea-block{margin-top:4rem;padding-top:3rem;border-top:1px solid rgba(247,242,233,.28);display:grid;grid-template-columns:1.15fr .85fr;column-gap:9vw;}
+.design-idea-block{margin-top:4rem;padding-top:3rem;border-top:1px solid currentColor;display:grid;grid-template-columns:1.15fr .85fr;column-gap:9vw;}
 .design-idea-block .eyebrow{grid-column:1/-1;margin-bottom:1.5rem;}
 .design-idea-block h3{font-size:clamp(1.5rem,2.6vw,2.4rem)!important;margin:0;}
 .design-idea-block p:last-child{font-size:.875rem;line-height:1.75;opacity:.78;max-width:38rem;}

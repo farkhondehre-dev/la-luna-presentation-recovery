@@ -9,7 +9,7 @@ document.querySelectorAll("[data-version]").forEach((link) => link.classList.tog
 $("brandName").textContent = c.name;
 if ($("nativeName")) {
   $("nativeName").textContent = c.nativeName;
-  $("nativeName").hidden = version === "1" || version === "2";
+  $("nativeName").hidden = true;
 }
 $("tagline").textContent = c.tagline;
 $("intro").textContent = c.intro;
@@ -68,3 +68,7 @@ $("downloadList").innerHTML = c.downloads.filter(d => d.file && d.file !== "#").
 const reference = document.querySelector(".reference");
 document.querySelector(".reference-toggle").addEventListener("click", () => { reference.classList.add("open"); reference.setAttribute("aria-hidden", "false"); });
 document.querySelector(".close-reference").addEventListener("click", () => { reference.classList.remove("open"); reference.setAttribute("aria-hidden", "true"); });
+
+if (version === "3") {
+ const s=document.createElement("style"); s.textContent=`body[data-version="3"] .lifestyle-card img{object-position:center center} body[data-version="3"] .lifestyle-1 img{object-position:center 52%} body[data-version="3"] .lifestyle-2 img{object-position:center 58%} body[data-version="3"] .lifestyle-3 img{object-position:center center} body[data-version="3"] .lifestyle-4 img{object-position:center center}`; document.head.appendChild(s);
+}

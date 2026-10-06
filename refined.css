@@ -1,0 +1,47 @@
+/* Presentation typography and uncropped visual assets. */
+body,body *{font-family:"La Luna Gotham",Arial,sans-serif!important;font-style:normal!important;font-weight:300;}
+body{font-size:14px;line-height:1.7;}
+strong,b{font-weight:500!important;}
+h1,h2,h3{letter-spacing:0!important;line-height:1.3!important;font-weight:300!important;}
+h1{font-size:clamp(4rem,10vw,8rem)!important;font-weight:500!important;}
+body h2,.logo-group-copy h2,.brand-type-layout>h2{font-size:clamp(1.25rem,2vw,1.75rem)!important;}
+body h3{font-size:1rem!important;}
+.tagline{font-size:1.4rem!important;line-height:1.6;}
+.intro,.lead,.logo-group-copy p,.brand-type-layout p,.palette-language-copy p{font-size:.875rem!important;line-height:1.75!important;}
+.eyebrow{font-size:.75rem;font-weight:500;letter-spacing:.1em;}
+.section{padding:5rem 7vw;}
+.hero{min-height:75vh;}
+.logo-group{grid-template-columns:minmax(200px,.28fr) minmax(0,.72fr);gap:4vw;align-items:center;padding:4rem 0;}
+.logo-group-copy h2{margin-bottom:1.1rem;}
+.logo-group-copy p{max-width:300px;}
+.logo-grid{gap:3vw;align-items:center;min-width:0;}
+.logo-card{min-width:0;}
+.logo-art{aspect-ratio:auto;min-height:180px;display:flex;align-items:center;justify-content:center;padding:0;overflow:visible;}
+.logo-art img{width:100%!important;height:auto!important;max-width:100%!important;max-height:none;display:block;}
+.application-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;align-items:start;}
+.application-card{height:auto;min-height:0;aspect-ratio:4/5;padding:0;display:block;overflow:hidden;background:var(--cream);border:1px solid var(--line);}
+.application-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transform:scale(1);transition:transform .5s ease;}
+.application-copy{position:absolute;right:0;bottom:0;left:0;padding:3.7rem 1.5rem 1.4rem;background:linear-gradient(transparent,rgba(19,26,38,.86));color:white;}
+.application-copy h3{margin:0 0 .5rem;}
+.application-copy p{font-size:.8125rem;line-height:1.7;}
+.lifestyle-grid{align-items:start;gap:1rem;}
+.lifestyle-card{height:420px;min-height:420px;overflow:hidden;background:#dfe3e8;}
+.lifestyle-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transform:scale(1);transition:transform .5s ease;}
+.lifestyle-card>div{position:absolute;right:0;bottom:0;left:0;padding:3.8rem 1.5rem 1.4rem;background:linear-gradient(transparent,rgba(18,27,40,.82));color:white;}
+.lifestyle-card p{font-size:.8125rem;line-height:1.7;}
+.brand-type-layout .brand-type-sample{font-size:2.5rem!important;}
+.brand-type-layout .georgia-specimen{font-family:"La Luna Georgia",Georgia,serif!important;font-weight:400;}
+.brand-type-layout .gotham-specimen{font-family:"La Luna Gotham",Arial,sans-serif!important;font-weight:300;}
+.swatch{cursor:default;}
+.swatch-detail{font-size:.8125rem;}
+.swatch-detail b{font-size:.875rem;}
+.download-content{align-items:start;}
+.reference-type{font-size:1.25rem;}
+body[data-version="2"]{--ink:#1D2055;--cream:#F7F5F0;--lav:#B8B3D0;--blue:#AABFD2;--silver:#D5D6D8;--line:rgba(29,32,85,.17);}
+body[data-version="2"] .palette-language-group:first-child .swatches{grid-template-columns:repeat(4,minmax(0,1fr));}
+body[data-version="2"] .lifestyle-1 img{object-position:center top;}
+body[data-version="2"] .lifestyle-3 img{object-position:center 30%;}
+@media(max-width:720px){body[data-version="2"] .palette-language-group:first-child .swatches{grid-template-columns:1fr;}}
+@media(hover:hover) and (pointer:fine){.application-card:hover img,.lifestyle-card:hover img{transform:scale(1.035)}}
+@media(prefers-reduced-motion:reduce){.application-card img,.lifestyle-card img{transition:none}.application-card:hover img,.lifestyle-card:hover img{transform:scale(1)}}
+@media(max-width:720px){.section{padding:3.5rem 6vw}.logo-group{grid-template-columns:1fr;gap:2.5rem;padding:3rem 0}.logo-group-copy p{max-width:100%}.logo-grid{grid-template-columns:1fr;gap:3rem}.logo-art{min-height:0}.logo-art img{max-width:540px!important}.application-grid{grid-template-columns:1fr}.application-card{height:auto;min-height:0}.lifestyle-card{height:350px;min-height:350px}.hero{min-height:580px}.lifestyle-grid{gap:1rem}}

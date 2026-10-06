@@ -1,0 +1,5 @@
+.presentation-switcher{display:flex;gap:.2rem;padding:.25rem;border:1px solid var(--line);background:rgba(255,255,255,.28)}
+.presentation-switcher a{padding:.36rem .54rem;font-size:.66rem;font-weight:600;letter-spacing:.06em;white-space:nowrap;transition:background .2s,color .2s}
+.presentation-switcher a:hover,.presentation-switcher a.is-active{background:var(--ink);color:var(--cream)}
+@media(max-width:960px){.presentation-switcher{margin-left:auto;margin-right:1rem}.nav nav{display:none}}
+@media(max-width:560px){.nav{gap:.55rem}.brand-mini{font-size:.66rem}.presentation-switcher{margin:0;padding:.18rem}.presentation-switcher a{padding:.33rem .35rem;font-size:.58rem}.reference-toggle{padding:.48rem .55rem;font-size:.62rem}}

@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- Deploy update -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La Luna brand presentation" />
+    <title>La Luna — Brand Presentation</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="variants.css" />
+    <link rel="stylesheet" href="mockups.css" />
+    <link rel="stylesheet" href="lifestyle.css" />
+    <link rel="stylesheet" href="logo-system.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="refined.css" />
+  </head>
+  <body>
+    <header class="nav"><a class="brand-mini" href="?version=1#top">LA LUNA</a><div class="presentation-switcher" aria-label="Logo presentations"><a data-version="1" href="?version=1">La Luna 1</a><a data-version="2" href="?version=2">La Luna 2</a><a data-version="3" href="?version=3">La Luna 3</a></div><nav><a href="#story">Story</a><a href="#palette">Palette</a><a href="#applications">Applications</a></nav><button class="reference-toggle" type="button">Quick reference</button></header>
+    <main id="top">
+      <section class="hero section"><p class="eyebrow" id="presentationLabel">Brand presentation · 2026</p><p class="native-name" id="nativeName"></p><h1 id="brandName"></h1><p class="tagline" id="tagline"></p><p class="intro" id="intro"></p><a class="scroll-cue" href="#story">Explore the identity</a></section>
+      <section class="section logo-system" id="logos" hidden><p class="eyebrow">Logo system</p><div id="logoSystem"></div></section>
+      <section class="section story" id="story"><p class="eyebrow">01 — The idea</p><div class="story-grid"><h2 id="conceptTitle"></h2><div><p class="lead" id="positioning"></p><p id="concept"></p></div></div></section>
+      <section class="section palette" id="palette"><p class="eyebrow">02 — Colour language</p><div class="section-heading"><h2>Softness has a palette.</h2><p>Click a colour to copy its HEX value.</p></div><div class="swatches" id="swatches"></div></section>
+      <section class="section type-section"><p class="eyebrow">03 — Typography</p><div class="type-card"><p class="sample" id="typeSample">Care begins with attention.</p><div><p class="type-meta" id="typeNames"></p><p id="typeNote"></p></div></div></section>
+      <section class="section applications" id="applications"><p class="eyebrow">04 — In application</p><h2>Designed to be recognised, made to be felt.</h2><div class="application-grid" id="applicationGrid"></div></section>
+      <section class="section lifestyle"><p class="eyebrow">05 — A softer everyday</p><div class="section-heading"><h2>Care you can feel.</h2><p>A product world built around everyday rituals, not just performance.</p></div><div class="lifestyle-grid" id="lifestyleGrid"></div></section>
+      <section class="section downloads"><p class="eyebrow">06 — Brand assets</p><div class="download-content"><h2>Everything, in one place.</h2><div id="downloadList"></div></div></section>
+    </main>
+    <footer><span>LA LUNA</span><span>Care Beyond Clean</span></footer>
+    <aside class="reference" aria-hidden="true"><button class="close-reference" type="button">Close</button><p class="eyebrow">Quick reference</p><div id="referenceSwatches"></div><p class="reference-type" id="referenceTypes"></p></aside>
+    <div class="toast" role="status" aria-live="polite">Copied</div>
+    <script src="content.js"></script><script src="script.js"></script>
+  </body>
+</html>

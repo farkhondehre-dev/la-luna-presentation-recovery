@@ -4,3 +4,6 @@
 .design-idea-block h3{font-size:clamp(1.5rem,2.6vw,2.4rem)!important;margin:0;}
 .design-idea-block p:last-child{font-size:.875rem;line-height:1.75;opacity:.78;max-width:38rem;}
 @media(max-width:720px){.design-idea-block{grid-template-columns:1fr;gap:1rem;}}
+
+/* V4 — Match La Luna 02 text colour to La Luna 01/03 */
+body[data-version="2"]{--ink:#18213D;}
